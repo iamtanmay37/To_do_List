@@ -1,0 +1,160 @@
+A PROJECT REPORT ON
+
+CLI TO-DO LIST MANAGER
+
+Submitted by: [Your Name]
+
+[Class / Semester]
+
+[Roll Number]
+
+Under the Guidance of: [Teacher's Name]
+
+[Department of Computer Science]
+
+1. CERTIFICATE
+
+This is to certify that the project titled "CLI To-Do List Manager" is a bona fide work carried out by [Your Name] of class [Your Class] under my supervision. The project fulfills the requirements for the Computer Science practical evaluation.
+
+Teacher's Signature: ____________________
+
+Date: ____________________
+
+2. ACKNOWLEDGEMENT
+
+I would like to express my special thanks of gratitude to my teacher [Teacher's Name] as well as our principal [Principal's Name] who gave me the golden opportunity to do this wonderful project on the topic "To-Do List Manager", which also helped me in doing a lot of Research and I came to know about so many new things. I am really thankful to them.
+
+3. ABSTRACT
+
+In the modern digital age, task management is crucial for productivity. This project, the "CLI To-Do List Manager," is a software utility developed using the Python programming language. It aims to provide users with a simple, efficient, and persistent way to track daily tasks. Unlike volatile memory storage, this application utilizes file handling to save user data permanently to the hard disk, ensuring that tasks are retrievable across different sessions.
+
+4. INTRODUCTION
+
+4.1 Problem Statement
+
+Students and professionals often struggle to keep track of pending tasks. While there are complex apps available, many require internet access, accounts, or heavy installation processes. There is a need for a lightweight, offline, and immediate tool for task management.
+
+4.2 Proposed Solution
+
+The To-Do List Manager is a command-line interface (CLI) application that runs instantly on any computer with Python installed. It offers:
+
+Simplicity: No complex GUI, just fast keyboard interaction.
+
+Persistence: All data is saved to a todo.txt file automatically.
+
+Efficiency: Instant addition and removal of tasks without loading screens.
+
+5. SYSTEM REQUIREMENTS
+
+5.1 Hardware Requirements
+
+Processor: Intel Core i3 or equivalent (Min).
+
+RAM: 2 GB or higher.
+
+Storage: Less than 1 MB of free space required.
+
+5.2 Software Requirements
+
+Operating System: Windows 10/11, macOS, or Linux.
+
+Programming Language: Python 3.6 or higher.
+
+Interpreter: Standard CPython Interpreter.
+
+Editor/IDE: IDLE, VS Code, or Notepad.
+
+6. IMPLEMENTATION DETAILS
+
+The project is built using the procedural programming paradigm in Python. The core logic revolves around Python Lists and File Input/Output (I/O) operations.
+
+6.1 Modules Used
+
+os Module: Used to check if the data file (todo.txt) exists before attempting to read from it, preventing "File Not Found" errors.
+
+6.2 Key Functions
+
+load_tasks():
+
+Opens todo.txt in read mode ('r').
+
+Reads lines and strips newline characters (\n).
+
+Returns a python list containing the tasks.
+
+save_tasks(tasks):
+
+Opens todo.txt in write mode ('w').
+
+Iterates through the list and writes each task to a new line in the file.
+
+Ensures data persistence.
+
+add_task(tasks):
+
+Takes user input.
+
+Appends the new string to the tasks list.
+
+Calls save_tasks() to update the file immediately.
+
+remove_task(tasks):
+
+Displays the current list with index numbers.
+
+Accepts an integer input from the user.
+
+Uses pop() to remove the item at that specific index.
+
+Handles ValueError to ensure the program doesn't crash if non-integer data is entered.
+
+7. SOURCE CODE
+
+(Note: Attach the printout of todo_list.py here during final submission)
+
+# [Brief Snippet of Main Logic]
+def main():
+    tasks = load_tasks()
+    while True:
+        # Display Menu
+        # Handle Inputs
+        # Call functions based on choice
+
+
+8. OUTPUT AND RESULTS
+
+The application successfully runs in the terminal.
+
+When the program starts, it loads existing tasks.
+
+The user is presented with a menu (View, Add, Remove, Exit).
+
+Inputting '2' allows the user to type a task, which is immediately saved.
+
+Inputting '3' asks for a task number to delete.
+
+Upon exiting, data remains saved in todo.txt for the next run.
+
+9. CONCLUSION AND FUTURE SCOPE
+
+9.1 Conclusion
+
+The "CLI To-Do List Manager" successfully demonstrates the power of Python for creating utility software. It fulfills the primary objective of task management with data persistence. It highlights the importance of error handling and modular code structure.
+
+9.2 Future Scope
+
+Graphical User Interface (GUI): Implementing a frontend using Tkinter or PyQt.
+
+Due Dates: Adding functionality to store dates alongside tasks.
+
+Categories: Grouping tasks into "Work", "Personal", and "School".
+
+Priorities: sorting tasks by High, Medium, or Low priority.
+
+10. BIBLIOGRAPHY
+
+Python Documentation (docs.python.org)
+
+Computer Science with Python - Sumita Arora
+
+StackOverflow.com for error resolution strategies.
