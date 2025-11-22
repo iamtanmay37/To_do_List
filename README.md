@@ -49,8 +49,4 @@ README.md: Project documentation.
 
 👤 Author
 
-Developed by [Your Name]
-
-Computer Science Department
-
-[Your School/College Name]
+Developed by Tanmay Tiwari
